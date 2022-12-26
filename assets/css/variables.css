@@ -1,0 +1,68 @@
+:root{
+/*Primary Colors*/
+--Lime-Green: hsl(163, 72%, 41%);
+--Bright-Red: hsl(356, 69%, 56%);
+
+--Facebook: hsl(208, 92%, 53%);
+--Twitter: hsl(203, 89%, 53%);
+--Instagram: linear-gradient(90deg,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+--YouTube: hsl(348, 97%, 39%);
+
+--Toggle: linear-gradient(90deg,hsl(210, 78%, 56%), hsl(146, 68%, 55%)); 
+
+/*Light Theme (default)*/
+--White_BG: hsl(0, 0%, 100%);
+--Very-Pale-Blue_Top-BG-Pattern: hsl(225, 100%, 98%);
+--Light-Grayish-Blue_Card-BG: hsl(227, 47%, 96%);
+--Light-Grayish-Blue_Card-BG-Hover: hsl(227, 13%, 86%);
+--Dark-Grayish-Blue_Text: hsl(228, 12%, 44%);
+--Very-Dark-Blue_Text: hsl(230, 17%, 14%);
+
+/*Dark Theme*/
+--Very-Dark-Blue_BG: hsl(230, 17%, 14%);
+--Very-Dark-Blue_Top-BG-Pattern: hsl(232, 19%, 15%);
+--Dark-Desaturated-Blue_Card-BG: hsl(228, 28%, 20%);
+--Dark-Desaturated-Blue_Card-BG-Hover: hsl(229, 28%, 31%);
+--Desaturated-Blue_Text: hsl(228, 34%, 66%);
+--White_Text: hsl(0, 0%, 100%);
+}
+
+
+ @media (prefers-color-scheme: dark) {
+    :root{
+    --Body-Background:var(--Very-Dark-Blue_BG);
+    --Background-Pattern:var(--Very-Dark-Blue_Top-BG-Pattern);
+    --Card-Background:var(--Dark-Desaturated-Blue_Card-BG);
+    --Card-Background-Hover:var(--Dark-Desaturated-Blue_Card-BG-Hover);
+    --Text-color-2:var(--Desaturated-Blue_Text);
+    --Text-color-1:var(--White_Text);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --Body-Background: var(--White_BG);
+        --Background-Pattern: var(--Very-Pale-Blue_Top-BG-Pattern);
+        --Card-Background: var(--Light-Grayish-Blue_Card-BG);
+        --Card-Background-Hover: var(--Light-Grayish-Blue_Card-BG-Hover);
+        --Text-color-2: var(--Dark-Grayish-Blue_Text);
+        --Text-color-1: var(--Very-Dark-Blue_Text);
+    }
+} 
+[color-scheme="light"]{
+    --Body-Background: var(--White_BG);
+    --Background-Pattern: var(--Very-Pale-Blue_Top-BG-Pattern);
+    --Card-Background: var(--Light-Grayish-Blue_Card-BG);
+    --Card-Background-Hover: var(--Light-Grayish-Blue_Card-BG-Hover);
+    --Text-color-2: var(--Dark-Grayish-Blue_Text);
+    --Text-color-1: var(--Very-Dark-Blue_Text);
+}
+
+[color-scheme="dark"]{
+    --Body-Background:var(--Very-Dark-Blue_BG);
+    --Background-Pattern:var(--Very-Dark-Blue_Top-BG-Pattern);
+    --Card-Background:var(--Dark-Desaturated-Blue_Card-BG);
+    --Card-Background-Hover:var(--Dark-Desaturated-Blue_Card-BG-Hover);
+    --Text-color-2:var(--Desaturated-Blue_Text);
+    --Text-color-1:var(--White_Text);
+}
